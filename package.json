@@ -1,0 +1,25 @@
+{
+  "name": "swaye-sdk",
+  "version": "1.0.0",
+  "description": "Wrapper for interaction with sway api",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register  --exit ./test/**/*.ts",
+    "test:e2e": "DOTENV_CONFIG_PATH=./.test.env mocha --require ts-node/register --require dotenv/config --exit \"./test/**/*\\.e2e\\.*.ts\" ",
+    "build": "tsc"
+  },
+  "author": "Alexander Whiting",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/sinon": "^17.0.2",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0",
+    "sinon": "^17.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
